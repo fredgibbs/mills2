@@ -70,7 +70,7 @@ function createCard(page,rowString) {
     else {
       rowString += '<div class="col-sm-4">';
       rowString += '<div class="card">';
-      rowString += '<img class="card-img-top" src="sites/images/' + page.image + '" alt="Essay image">';
+      rowString += '<img class="card-img-top" src="/sites/images/' + page.image + '" alt="Essay image">';
       rowString += '<div class="card-block">';
       rowString += '<h4 class="card-title">' + page.title + '</h4>';
       rowString += '<p class="card-text">' + page.description + '</p>';
