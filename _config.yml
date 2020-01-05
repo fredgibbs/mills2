@@ -1,0 +1,7 @@
+title: GRIST
+defaults:
+  -
+    scope:
+      path: "sites"
+    values:
+      layout: "base"
