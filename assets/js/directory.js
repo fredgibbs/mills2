@@ -1,3 +1,6 @@
+---
+---
+
 "use strict";
 
 /* ==============================
@@ -11,8 +14,8 @@ function getPages(callback) {
     // The spreadsheet must be either "visible to anyone with the link", or "public on the web".
 
 
-    var sheetURL =
-    "https://docs.google.com/spreadsheets/d/13BgIRglusuQZhuSrMzYztKpE_tW5H9dWrM5oFxST1IA/edit?usp=sharing#gid=0"
+    var sheetURL = "{{site.google-sheet-url}}"
+    // "https://docs.google.com/spreadsheets/d/13BgIRglusuQZhuSrMzYztKpE_tW5H9dWrM5oFxST1IA/edit?usp=sharing#gid=0"
     var pages = [];
     $('#sheetrock').sheetrock({
         url: sheetURL,

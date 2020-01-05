@@ -11,8 +11,8 @@ function getPages(callback) {
     // The spreadsheet must be either "visible to anyone with the link", or "public on the web".
 
 
-    var sheetURL =
-    "https://docs.google.com/spreadsheets/d/13BgIRglusuQZhuSrMzYztKpE_tW5H9dWrM5oFxST1IA/edit?usp=sharing#gid=0"
+    var sheetURL = "https://docs.google.com/spreadsheets/d/13BgIRglusuQZhuSrMzYztKpE_tW5H9dWrM5oFxST1IA/edit?usp=sharing#gid=0"
+    // "https://docs.google.com/spreadsheets/d/13BgIRglusuQZhuSrMzYztKpE_tW5H9dWrM5oFxST1IA/edit?usp=sharing#gid=0"
     var pages = [];
     $('#sheetrock').sheetrock({
         url: sheetURL,
@@ -70,7 +70,7 @@ function createCard(page,rowString) {
     else {
       rowString += '<div class="col-sm-4">';
       rowString += '<div class="card">';
-      rowString += '<img class="card-img-top" src="sites/images/' + page.image + '" alt="Essay image">';
+      rowString += '<img class="card-img-top" src="/sites/images/' + page.image + '" alt="Essay image">';
       rowString += '<div class="card-block">';
       rowString += '<h4 class="card-title">' + page.title + '</h4>';
       rowString += '<p class="card-text">' + page.description + '</p>';

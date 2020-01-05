@@ -1,3 +1,6 @@
+---
+---
+
 /* global L Tabletop */
 
 /*
@@ -11,11 +14,11 @@ function init() {
   // PASTE YOUR URLs HERE
   // these URLs come from Google Sheets 'shareable link' form
   // the first is the polygon layer and the second the points
-  var polyURL =
-    "https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
-  var pointsURL =
+  // var polyURL =
+  //  "https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
+  var pointsURL = "{{site.google-sheet-url}}"
     // mills
-    "https://docs.google.com/spreadsheets/d/13BgIRglusuQZhuSrMzYztKpE_tW5H9dWrM5oFxST1IA/edit#gid=0";
+    //"https://docs.google.com/spreadsheets/d/13BgIRglusuQZhuSrMzYztKpE_tW5H9dWrM5oFxST1IA/edit#gid=0";
 
   //Tabletop.init({ key: polyURL, callback: addPolygons, simpleSheet: true });
   Tabletop.init({ key: pointsURL, callback: addPoints, simpleSheet: true }); // simpleSheet assumes there is only one table and automatically sends its data
