@@ -61,7 +61,7 @@ function createCard(page,rowString) {
     if (page.filename) {
       rowString += '<a href="sites/'+filename+'">';
       rowString += '<div class="col-sm-12 featured-card">';
-      rowString += '<div style="color:#fff; height:500px; background-size:100% 100%; background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, .5)), url(\'{{base-url}}/sites/images/' + page.image + '\')">';
+      rowString += '<div style="color:#fff; height:500px; background-size:100% 100%; background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, .5)), url(\'{{base-url}}sites/images/' + page.image + '\')">';
       //rowString += '<img src="sites/images/' + page.image + '" alt="Essay image">';
       //rowString += '</div>';
       rowString += '<div class="card-block" style="position:absolute;bottom:0;">';
@@ -73,7 +73,7 @@ function createCard(page,rowString) {
     else {
       rowString += '<div class="col-sm-4">';
       rowString += '<div class="card">';
-      rowString += '<img class="card-img-top" src="{{base-url}}/sites/images/' + page.image + '" alt="Essay image">';
+      rowString += '<img class="card-img-top" src="{{base-url}}sites/images/' + page.image + '" alt="Essay image">';
       rowString += '<div class="card-block">';
       rowString += '<h4 class="card-title">' + page.title + '</h4>';
       rowString += '<p class="card-text">' + page.description + '</p>';
